@@ -1,38 +1,51 @@
 # Azure Identity Governance Project
+Project Overview
+This project demonstrates identity and access management using Microsoft Entra ID and Azure Role-Based Access Control (RBAC).
 
-# Project Overview
-This project demonstrates enterprise identity and access management using Microsoft Entra ID and Azure RBAC.
-
-The environment simulates a company with separate administrative, development, and support teams.
+The environment simulates a company with separate teams for Cloud Administration, Development, and Support Operations.
 
 # Business Scenario
-An organization requires a secure RBAC model where:
+The organization requires controlled access to Azure resources:
 
-Cloud Administrators manage infrastructure
-Developers manage applications
-Support Engineers have read-only access
-
-# Resources Created
-Resource Groups:
-
+Cloud Administrators manage cloud infrastructure.
+Developers deploy and maintain applications.
+Support Engineers monitor resources and perform operational checks.
+Resource Groups
 rg-app-prod
 rg-infra-prod
 
-Security Groups:
-
+# Security Groups
 Cloud-Admins
 Developers
 
+# RBAC Model
+Cloud-Admins → Contributor
+
+Developers → Contributor
+
 # Technologies Used
+
 Microsoft Entra ID
 Azure RBAC
 Azure Resource Groups
 Identity Governance
+Security Groups
 
-# Principle Implemented
+# Tasks Performed
+Created security groups
+Created test users
+Added users to groups
+Created Azure Resource Groups
+Assigned RBAC permissions
+Verified role inheritance through groups
+Reviewed access assignments
+
+# Security Principles Applied
+
 Least Privilege Access
+Group-Based Access Management
+Centralized Identity Governance
 Role-Based Access Control
-Governance and Compliance
 
 # Outcome
-Successfully designed and implemented a secure access model for Azure resources using group-based RBAC.
+Successfully configured a group-based access model using Microsoft Entra ID and Azure RBAC to manage permissions across multiple Azure Resource Groups.
