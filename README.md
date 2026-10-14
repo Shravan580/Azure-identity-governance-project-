@@ -18,7 +18,7 @@ Resource Groups:
 rg-app-prod
 rg-infra-prod
 
-** Security Groups:
+Security Groups:
 
 Cloud-Admins
 Developers
